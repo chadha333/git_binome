@@ -49,11 +49,6 @@ def main():
             break
         else:
             print("Choix invalide.")
-
-
-if __name__ == "__main__":
-    main
-# test
 def show_average():
     if not expenses:
         print("No expenses recorded.")
@@ -62,6 +57,10 @@ def show_average():
     total = sum(item["amount"] for item in expenses)
     average = total / len(expenses)
 
+
+if __name__ == "__main__":
+    main
+# test
     print(f"Average expense: {average:.2f}")
  print("5. Show average")
  elif choice == "5":
